@@ -63,4 +63,4 @@ Aliases: Supports shorthand commands (e.g., n for north, i for inventory).
 Dynamic Mutations: Use items to unlock new paths or change room descriptions dynamically.
 
 ## ⚖️ License
-> This project is open-source and free to use for any personal or educational projects.
+> This project is open-source and free to use for any personal or educational projects. And with MIT License.
