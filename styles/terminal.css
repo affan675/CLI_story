@@ -1,0 +1,72 @@
+:root {
+    --glow-color: #33ff33;
+    --bg-color: #031103;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--glow-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#terminal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-shadow: 0 0 5px var(--glow-color);
+}
+
+#output {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    padding-right: 10px;
+}
+
+/* Hide standard scrollbars */
+#output::-webkit-scrollbar {
+    width: 0px;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#command-input {
+    background: transparent;
+    border: none;
+    color: var(--glow-color);
+    font-family: inherit;
+    font-size: inherit;
+    flex-grow: 1;
+    outline: none;
+    text-shadow: 0 0 5px var(--glow-color);
+}
+
+/* CRT Scanline Overlay Effect */
+.crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 6px 100%;
+    z-index: 999;
+    pointer-events: none;
+}

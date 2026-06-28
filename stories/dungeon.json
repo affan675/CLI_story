@@ -1,0 +1,37 @@
+{
+  "start": "cell",
+  "rooms": {
+    "cell": {
+      "desc": "You awake inside a dank, moss-covered prison cell. Heavy iron bars block the exit leading north.",
+      "exits": {},
+      "items": ["rusty-key"]
+    },
+    "hallway": {
+      "desc": "A long cobblestone corridor. Torchlight flickers against the walls. To the south is your old cell. To the west is an abandoned armory. A massive steel door bars passage to the east.",
+      "exits": {
+        "south": "cell",
+        "west": "armory"
+      },
+      "items": [],
+      "useActions": {
+        "rusty-key": {
+          "msg": "You jam the rusty-key into the door lock and turn it with a heavy click. The massive steel door swings open to the east!",
+          "addExit": { "east": "courtyard" }
+        }
+      }
+    },
+    "armory": {
+      "desc": "Rusted weapon racks line the walls. Dust settles over broken shields. The hallway lies back to the east.",
+      "exits": {
+        "east": "hallway"
+      },
+      "items": ["sword"]
+    },
+    "courtyard": {
+      "desc": "Cool night air hits your face. The starlit night sky stretches above you. You have broken free from the depths! You win!",
+      "exits": {},
+      "items": [],
+      "ending": true
+    }
+  }
+}
