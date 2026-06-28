@@ -14,7 +14,7 @@ This engine uses a JSON-driven architecture, allowing you to define complex worl
 ```
 Access the game by opening your browser to http://localhost:1500.
 
-# 📁 Project Structure
+## 📁 Project Structure
 ```
 index.html: Main UI template.
 
@@ -32,7 +32,7 @@ renderer.js: Handles DOM updates and terminal output.
 
 stories/: JSON files defining world maps.
 ```
-# 📖 Story Format
+## 📖 Story Format
 Create your own adventures by adding a new JSON file to the stories/ directory. The engine expects this structure:
 
 ```
@@ -53,7 +53,7 @@ Create your own adventures by adding a new JSON file to the stories/ directory. 
   }
 }
 ```
-# 🛠 Features
+## 🛠 Features
 Command Parser: Interprets natural [verb] + [noun] syntax.
 
 Fuzzy Matching: Suggests corrections for mistyped exit directions.
@@ -62,5 +62,5 @@ Aliases: Supports shorthand commands (e.g., n for north, i for inventory).
 
 Dynamic Mutations: Use items to unlock new paths or change room descriptions dynamically.
 
-# ⚖️ License
+## ⚖️ License
 > This project is open-source and free to use for any personal or educational projects.
